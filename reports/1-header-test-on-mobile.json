@@ -1,0 +1,357 @@
+{
+  "testId" : "1-header-test-on-mobile",
+  "name" : "Header Test on mobile",
+  "report" : {
+    "nodes" : [ {
+      "name" : "https://ciceksepeti.com/ 479x900",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "inject js/clicksearch.js",
+        "status" : "info",
+        "time" : 1471960478677,
+        "type" : "node"
+      }, {
+        "name" : "check header.gspec --include \"mobile\"",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: header.gspec included tags: mobile",
+          "status" : "info",
+          "time" : 1471960484156,
+          "includedTags" : [ "mobile" ],
+          "excludedTags" : [ ],
+          "sections" : [ {
+            "name" : "Header Logo",
+            "place" : {
+              "filePath" : "header.gspec",
+              "lineNumber" : 14
+            },
+            "objects" : [ {
+              "name" : "responsive-logo",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "header.gspec",
+                  "lineNumber" : 21
+                },
+                "name" : "height 26px",
+                "highlight" : [ "responsive-logo" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Search Box",
+            "place" : {
+              "filePath" : "header.gspec",
+              "lineNumber" : 23
+            },
+            "objects" : [ {
+              "name" : "responsive-search-box",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "header.gspec",
+                  "lineNumber" : 30
+                },
+                "name" : "below responsive-logo 8px",
+                "highlight" : [ "responsive-search-box", "responsive-logo" ]
+              } ]
+            }, {
+              "name" : "responsive-search-icon",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "header.gspec",
+                  "lineNumber" : 34
+                },
+                "name" : "right-of responsive-logo 138px",
+                "highlight" : [ "responsive-search-icon", "responsive-logo" ]
+              } ]
+            } ]
+          }, {
+            "name" : "User Menu",
+            "place" : {
+              "filePath" : "header.gspec",
+              "lineNumber" : 36
+            },
+            "objects" : [ {
+              "name" : "responsive-user-menu",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "header.gspec",
+                  "lineNumber" : 43
+                },
+                "name" : "left-of responsive-logo 125px",
+                "highlight" : [ "responsive-user-menu", "responsive-logo" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "responsive-user-menu" : {
+              "area" : [ 10, 0, 38, 44 ]
+            },
+            "responsive-search-icon" : {
+              "area" : [ 431, 12, 24, 24 ]
+            },
+            "responsive-logo" : {
+              "area" : [ 173, 10, 120, 26 ]
+            },
+            "responsive-search-box" : {
+              "area" : [ 0, 44, 465, 72 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1471960480508,
+        "type" : "node"
+      }, {
+        "name" : "inject js/clickmobilemenu.js",
+        "status" : "info",
+        "time" : 1471960484156,
+        "type" : "node"
+      }, {
+        "name" : "check mobile-usermenu.gspec --include \"mobile\"",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: mobile-usermenu.gspec included tags: mobile",
+          "status" : "info",
+          "time" : 1471960486171,
+          "includedTags" : [ "mobile" ],
+          "excludedTags" : [ ],
+          "sections" : [ {
+            "name" : "Responsive Menu",
+            "place" : {
+              "filePath" : "mobile-usermenu.gspec",
+              "lineNumber" : 14
+            },
+            "objects" : [ {
+              "name" : "cicek",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobile-usermenu.gspec",
+                  "lineNumber" : 17
+                },
+                "name" : "height 45px",
+                "highlight" : [ "cicek" ]
+              } ]
+            }, {
+              "name" : "bonnyfood",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobile-usermenu.gspec",
+                  "lineNumber" : 21
+                },
+                "name" : "height 45px",
+                "highlight" : [ "bonnyfood" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobile-usermenu.gspec",
+                  "lineNumber" : 22
+                },
+                "name" : "below cicek",
+                "highlight" : [ "bonnyfood", "cicek" ]
+              } ]
+            }, {
+              "name" : "bonnygift",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobile-usermenu.gspec",
+                  "lineNumber" : 26
+                },
+                "name" : "height 45px",
+                "highlight" : [ "bonnygift" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobile-usermenu.gspec",
+                  "lineNumber" : 27
+                },
+                "name" : "below bonnyfood",
+                "highlight" : [ "bonnygift", "bonnyfood" ]
+              } ]
+            }, {
+              "name" : "butik",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobile-usermenu.gspec",
+                  "lineNumber" : 31
+                },
+                "name" : "height 45px",
+                "highlight" : [ "butik" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobile-usermenu.gspec",
+                  "lineNumber" : 32
+                },
+                "name" : "below bonnygift",
+                "highlight" : [ "butik", "bonnygift" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Responsive User Menu",
+            "place" : {
+              "filePath" : "mobile-usermenu.gspec",
+              "lineNumber" : 34
+            },
+            "objects" : [ {
+              "name" : "user-menu",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobile-usermenu.gspec",
+                  "lineNumber" : 37
+                },
+                "name" : "below main-menu 10px",
+                "highlight" : [ "user-menu", "main-menu" ]
+              } ]
+            }, {
+              "name" : "user-menu.siparis-takibi",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobile-usermenu.gspec",
+                  "lineNumber" : 41
+                },
+                "name" : "inside user-menu",
+                "highlight" : [ "user-menu.siparis-takibi", "user-menu" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobile-usermenu.gspec",
+                  "lineNumber" : 42
+                },
+                "name" : "text is \"Sipariş Takibi\"",
+                "highlight" : [ "user-menu.siparis-takibi" ]
+              } ]
+            }, {
+              "name" : "user-menu.uyelik",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobile-usermenu.gspec",
+                  "lineNumber" : 46
+                },
+                "name" : "inside user-menu",
+                "highlight" : [ "user-menu.uyelik", "user-menu" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobile-usermenu.gspec",
+                  "lineNumber" : 47
+                },
+                "name" : "below user-menu.siparis-takibi",
+                "highlight" : [ "user-menu.uyelik", "user-menu.siparis-takibi" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobile-usermenu.gspec",
+                  "lineNumber" : 48
+                },
+                "name" : "text is \"Üyelik\"",
+                "highlight" : [ "user-menu.uyelik" ]
+              } ]
+            }, {
+              "name" : "user-menu.sepetim",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobile-usermenu.gspec",
+                  "lineNumber" : 52
+                },
+                "name" : "inside user-menu",
+                "highlight" : [ "user-menu.sepetim", "user-menu" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobile-usermenu.gspec",
+                  "lineNumber" : 53
+                },
+                "name" : "below user-menu.uyelik",
+                "highlight" : [ "user-menu.sepetim", "user-menu.uyelik" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobile-usermenu.gspec",
+                  "lineNumber" : 54
+                },
+                "name" : "text is \"Sepetim\"",
+                "highlight" : [ "user-menu.sepetim" ]
+              } ]
+            }, {
+              "name" : "user-menu.bize-ulasin",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobile-usermenu.gspec",
+                  "lineNumber" : 58
+                },
+                "name" : "inside user-menu",
+                "highlight" : [ "user-menu.bize-ulasin", "user-menu" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobile-usermenu.gspec",
+                  "lineNumber" : 59
+                },
+                "name" : "below user-menu.sepetim",
+                "highlight" : [ "user-menu.bize-ulasin", "user-menu.sepetim" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mobile-usermenu.gspec",
+                  "lineNumber" : 60
+                },
+                "name" : "text is \"Bize Ulaşın\"",
+                "highlight" : [ "user-menu.bize-ulasin" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "user-menu.bize-ulasin" : {
+              "area" : [ 0, 346, 280, 51 ]
+            },
+            "main-menu" : {
+              "area" : [ 0, 0, 280, 180 ]
+            },
+            "cicek" : {
+              "area" : [ 0, 0, 280, 45 ]
+            },
+            "butik" : {
+              "area" : [ 0, 135, 280, 45 ]
+            },
+            "user-menu.siparis-takibi" : {
+              "area" : [ 0, 190, 280, 54 ]
+            },
+            "user-menu" : {
+              "area" : [ 0, 190, 280, 206 ]
+            },
+            "bonnyfood" : {
+              "area" : [ 0, 45, 280, 45 ]
+            },
+            "user-menu.sepetim" : {
+              "area" : [ 0, 295, 280, 51 ]
+            },
+            "bonnygift" : {
+              "area" : [ 0, 90, 280, 45 ]
+            },
+            "user-menu.uyelik" : {
+              "area" : [ 0, 244, 280, 51 ]
+            }
+          },
+          "screenshot" : "layout-2-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1471960484203,
+        "type" : "node"
+      } ],
+      "time" : 1471960470748,
+      "type" : "node"
+    } ]
+  }
+}

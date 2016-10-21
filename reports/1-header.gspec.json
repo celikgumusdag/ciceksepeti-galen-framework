@@ -1,0 +1,50 @@
+{
+  "testId" : "1-header.gspec",
+  "name" : "header.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  header.gspec inject clicksearch.js --url https://www.ciceksepeti.com/ --size 479x900 --htmlreport reports --include mobile",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: header.gspec included tags: mobile",
+          "status" : "info",
+          "time" : 1471855910125,
+          "includedTags" : [ "mobile" ],
+          "sections" : [ {
+            "name" : "Header Logo",
+            "place" : {
+              "filePath" : "header.gspec",
+              "lineNumber" : 11
+            },
+            "objects" : [ {
+              "name" : "responsive-logo",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "header.gspec",
+                  "lineNumber" : 18
+                },
+                "name" : "height 26px",
+                "highlight" : [ "responsive-logo" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "responsive-logo" : {
+              "area" : [ 164, 10, 120, 26 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1471855904457,
+        "type" : "node"
+      } ],
+      "time" : 1471855898228,
+      "type" : "node"
+    } ]
+  }
+}

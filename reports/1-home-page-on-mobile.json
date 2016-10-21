@@ -1,0 +1,56 @@
+{
+  "testId" : "1-home-page-on-mobile",
+  "name" : "Home page on mobile",
+  "report" : {
+    "nodes" : [ {
+      "name" : "https://ciceksepeti.com/ 479x900",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "inject clicksearch.js",
+        "status" : "info",
+        "time" : 1471856735744,
+        "type" : "node"
+      }, {
+        "name" : "check header.gspec --include \"mobile\"",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: header.gspec included tags: mobile",
+          "status" : "info",
+          "time" : 1471856741231,
+          "includedTags" : [ "mobile" ],
+          "excludedTags" : [ ],
+          "sections" : [ {
+            "name" : "Header Logo",
+            "place" : {
+              "filePath" : "header.gspec",
+              "lineNumber" : 11
+            },
+            "objects" : [ {
+              "name" : "responsive-logo",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "header.gspec",
+                  "lineNumber" : 18
+                },
+                "name" : "height 26px",
+                "highlight" : [ "responsive-logo" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "responsive-logo" : {
+              "area" : [ 173, 10, 120, 26 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1471856737193,
+        "type" : "node"
+      } ],
+      "time" : 1471856729213,
+      "type" : "node"
+    } ]
+  }
+}

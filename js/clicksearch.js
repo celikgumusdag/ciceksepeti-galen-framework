@@ -1,0 +1,1 @@
+$(".responsive-search-trigger__icon").click();

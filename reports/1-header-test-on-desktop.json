@@ -1,0 +1,209 @@
+{
+  "testId" : "1-header-test-on-desktop",
+  "name" : "Header Test on desktop",
+  "report" : {
+    "nodes" : [ {
+      "name" : "https://ciceksepeti.com/ 1200x900",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "inject js/clicksearch.js",
+        "status" : "info",
+        "time" : 1471960523588,
+        "type" : "node"
+      }, {
+        "name" : "check header.gspec --include \"desktop\"",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: header.gspec included tags: desktop",
+          "status" : "info",
+          "time" : 1471960529806,
+          "includedTags" : [ "desktop" ],
+          "excludedTags" : [ ],
+          "sections" : [ {
+            "name" : "Header Logo",
+            "place" : {
+              "filePath" : "header.gspec",
+              "lineNumber" : 14
+            },
+            "objects" : [ {
+              "name" : "header-logo",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "header.gspec",
+                  "lineNumber" : 17
+                },
+                "name" : "height 95px",
+                "highlight" : [ "header-logo" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Search Box",
+            "place" : {
+              "filePath" : "header.gspec",
+              "lineNumber" : 23
+            },
+            "objects" : [ {
+              "name" : "search-box",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "header.gspec",
+                  "lineNumber" : 26
+                },
+                "name" : "right-of header-logo 176px",
+                "highlight" : [ "search-box", "header-logo" ]
+              } ]
+            } ]
+          }, {
+            "name" : "User Menu",
+            "place" : {
+              "filePath" : "header.gspec",
+              "lineNumber" : 36
+            },
+            "objects" : [ {
+              "name" : "user-menu",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "header.gspec",
+                  "lineNumber" : 39
+                },
+                "name" : "right-of search-box 33px",
+                "highlight" : [ "user-menu", "search-box" ]
+              } ]
+            }, {
+              "name" : "user-menu.siparis-takibi",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "header.gspec",
+                  "lineNumber" : 47
+                },
+                "name" : "inside user-menu",
+                "highlight" : [ "user-menu.siparis-takibi", "user-menu" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "header.gspec",
+                  "lineNumber" : 48
+                },
+                "name" : "right-of search-box 58px",
+                "highlight" : [ "user-menu.siparis-takibi", "search-box" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "header.gspec",
+                  "lineNumber" : 49
+                },
+                "name" : "text is \"Sipariş Takibi\"",
+                "highlight" : [ "user-menu.siparis-takibi" ]
+              } ]
+            }, {
+              "name" : "user-menu.uyelik",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "header.gspec",
+                  "lineNumber" : 53
+                },
+                "name" : "inside user-menu",
+                "highlight" : [ "user-menu.uyelik", "user-menu" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "header.gspec",
+                  "lineNumber" : 54
+                },
+                "name" : "right-of user-menu.siparis-takibi 14px",
+                "highlight" : [ "user-menu.uyelik", "user-menu.siparis-takibi" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "header.gspec",
+                  "lineNumber" : 55
+                },
+                "name" : "text is \"Üyelik\"",
+                "highlight" : [ "user-menu.uyelik" ]
+              } ]
+            }, {
+              "name" : "user-menu.sepetim",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "header.gspec",
+                  "lineNumber" : 59
+                },
+                "name" : "inside user-menu",
+                "highlight" : [ "user-menu.sepetim", "user-menu" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "header.gspec",
+                  "lineNumber" : 60
+                },
+                "name" : "right-of user-menu.uyelik 14px",
+                "highlight" : [ "user-menu.sepetim", "user-menu.uyelik" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "header.gspec",
+                  "lineNumber" : 61
+                },
+                "name" : "text is \"Sepetim\"",
+                "highlight" : [ "user-menu.sepetim" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "search-box" : {
+              "area" : [ 451, 25, 332, 49 ]
+            },
+            "user-menu.siparis-takibi" : {
+              "area" : [ 841, 10, 84, 80 ]
+            },
+            "user-menu" : {
+              "area" : [ 816, 10, 239, 80 ]
+            },
+            "header-logo" : {
+              "area" : [ 115, 0, 160, 95 ]
+            },
+            "user-menu.sepetim" : {
+              "area" : [ 999, 16, 56, 74 ]
+            },
+            "user-menu.uyelik" : {
+              "area" : [ 939, 16, 46, 74 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1471960525039,
+        "type" : "node"
+      }, {
+        "name" : "inject js/clickmobilemenu.js",
+        "status" : "info",
+        "time" : 1471960529806,
+        "type" : "node"
+      }, {
+        "name" : "check mobile-usermenu.gspec --include \"desktop\"",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: mobile-usermenu.gspec included tags: desktop",
+          "status" : "info",
+          "time" : 1471960532377,
+          "includedTags" : [ "desktop" ],
+          "excludedTags" : [ ],
+          "sections" : [ ],
+          "objects" : { },
+          "screenshot" : "layout-2-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1471960529870,
+        "type" : "node"
+      } ],
+      "time" : 1471960515396,
+      "type" : "node"
+    } ]
+  }
+}

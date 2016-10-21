@@ -1,0 +1,16 @@
+@@ set domain ciceksepeti.com
+
+@@ table myDevices
+	|	deviceName	|	size		|	tags	|
+	|	desktop		|	1200x900	|	desktop	|
+	|	tablet		|	766x900		|	tablet	|
+	|	mobile		|	479x900		|	mobile	|
+
+@@ parameterized using myDevices
+Header Test on ${deviceName}
+	https://${domain}/ ${size}
+		inject js/clicksearch.js
+		check header.gspec --include "${tags}"
+		inject js/clickmobilemenu.js
+		check mobile-usermenu.gspec --include "${tags}"
+

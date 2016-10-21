@@ -1,0 +1,9 @@
+galen check header.gspec --url https://www.ciceksepeti.com/ --size 1200x600 --htmlreport reports --include desktop
+
+galen check header.gspec --url https://www.ciceksepeti.com/ --size 766x600 --htmlreport reports --include tablet
+
+galen check header.gspec --url https://www.ciceksepeti.com/ --size 479x600 --htmlreport reports --include mobile
+
+
+
+galen test run.test --htmlreport reports --filter "*mobile*"

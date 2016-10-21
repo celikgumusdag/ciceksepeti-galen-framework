@@ -1,0 +1,181 @@
+{
+  "testId" : "1-home-page-on-desktop",
+  "name" : "Home page on desktop",
+  "report" : {
+    "nodes" : [ {
+      "name" : "https://ciceksepeti.com/ 1200x900",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "inject clicksearch.js",
+        "status" : "info",
+        "time" : 1471856755187,
+        "type" : "node"
+      }, {
+        "name" : "check header.gspec --include \"desktop\"",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: header.gspec included tags: desktop",
+          "status" : "info",
+          "time" : 1471856762708,
+          "includedTags" : [ "desktop" ],
+          "excludedTags" : [ ],
+          "sections" : [ {
+            "name" : "Header Logo",
+            "place" : {
+              "filePath" : "header.gspec",
+              "lineNumber" : 11
+            },
+            "objects" : [ {
+              "name" : "header-logo",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "header.gspec",
+                  "lineNumber" : 14
+                },
+                "name" : "height 95px",
+                "highlight" : [ "header-logo" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Search Box",
+            "place" : {
+              "filePath" : "header.gspec",
+              "lineNumber" : 20
+            },
+            "objects" : [ {
+              "name" : "search-box",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "header.gspec",
+                  "lineNumber" : 23
+                },
+                "name" : "right-of header-logo 176px",
+                "highlight" : [ "search-box", "header-logo" ]
+              } ]
+            }, {
+              "name" : "user-menu",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "header.gspec",
+                  "lineNumber" : 27
+                },
+                "name" : "right-of search-box 33px",
+                "highlight" : [ "user-menu", "search-box" ]
+              } ]
+            }, {
+              "name" : "user-menu.siparis-takibi",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "header.gspec",
+                  "lineNumber" : 31
+                },
+                "name" : "inside user-menu",
+                "highlight" : [ "user-menu.siparis-takibi", "user-menu" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "header.gspec",
+                  "lineNumber" : 32
+                },
+                "name" : "right-of search-box 58px",
+                "highlight" : [ "user-menu.siparis-takibi", "search-box" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "header.gspec",
+                  "lineNumber" : 33
+                },
+                "name" : "text is \"Sipariş Takibi\"",
+                "highlight" : [ "user-menu.siparis-takibi" ]
+              } ]
+            }, {
+              "name" : "user-menu.uyelik",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "header.gspec",
+                  "lineNumber" : 37
+                },
+                "name" : "inside user-menu",
+                "highlight" : [ "user-menu.uyelik", "user-menu" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "header.gspec",
+                  "lineNumber" : 38
+                },
+                "name" : "right-of user-menu.siparis-takibi 14px",
+                "highlight" : [ "user-menu.uyelik", "user-menu.siparis-takibi" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "header.gspec",
+                  "lineNumber" : 39
+                },
+                "name" : "text is \"Üyelik\"",
+                "highlight" : [ "user-menu.uyelik" ]
+              } ]
+            }, {
+              "name" : "user-menu.sepetim",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "header.gspec",
+                  "lineNumber" : 43
+                },
+                "name" : "inside user-menu",
+                "highlight" : [ "user-menu.sepetim", "user-menu" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "header.gspec",
+                  "lineNumber" : 44
+                },
+                "name" : "right-of user-menu.uyelik 14px",
+                "highlight" : [ "user-menu.sepetim", "user-menu.uyelik" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "header.gspec",
+                  "lineNumber" : 45
+                },
+                "name" : "text is \"Sepetim\"",
+                "highlight" : [ "user-menu.sepetim" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "search-box" : {
+              "area" : [ 451, 25, 332, 49 ]
+            },
+            "user-menu.siparis-takibi" : {
+              "area" : [ 841, 10, 84, 80 ]
+            },
+            "user-menu" : {
+              "area" : [ 816, 10, 239, 80 ]
+            },
+            "header-logo" : {
+              "area" : [ 115, 0, 160, 95 ]
+            },
+            "user-menu.sepetim" : {
+              "area" : [ 999, 16, 56, 74 ]
+            },
+            "user-menu.uyelik" : {
+              "area" : [ 939, 16, 46, 74 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1471856759351,
+        "type" : "node"
+      } ],
+      "time" : 1471856748183,
+      "type" : "node"
+    } ]
+  }
+}

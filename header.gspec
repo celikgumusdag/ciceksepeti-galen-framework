@@ -1,0 +1,61 @@
+
+@objects
+	    header-logo 			.header__logo
+	    responsive-logo			.site-logo-responsive
+	    search-box  			.search-box
+	    responsive-search-box	.js-responsive-search
+	    responsive-search-icon	.responsive-search-trigger__icon
+	    user-menu   			.user-menu
+	    	siparis-takibi		.user-menu__item:nth-of-type(1)
+	    	uyelik				.user-menu__item:nth-of-type(2)
+	    	sepetim				.user-menu__item:nth-of-type(3)
+	    responsive-user-menu	.js-hamburger
+
+= Header Logo =
+    header-logo:
+    	@on desktop
+    		height 95px
+
+    responsive-logo:
+    	@on mobile
+    		height 26px
+
+= Search Box =
+    search-box:
+    	@on desktop
+    		right-of header-logo 176px
+
+    responsive-search-box:
+    	@on mobile
+    		below responsive-logo 8px
+
+    responsive-search-icon:
+    	@on mobile
+    		right-of responsive-logo 138px
+
+= User Menu =
+    user-menu:
+    	@on desktop
+    		right-of search-box 33px
+
+    responsive-user-menu:
+    	@on mobile
+    		left-of responsive-logo 125px
+
+    user-menu.siparis-takibi:
+    	@on desktop
+    		inside user-menu
+    		right-of search-box 58px
+    		text is "Sipariş Takibi"
+
+    user-menu.uyelik:
+    	@on desktop
+    		inside user-menu
+    		right-of user-menu.siparis-takibi 14px
+    		text is "Üyelik"
+
+    user-menu.sepetim:
+    	@on desktop
+    		inside user-menu
+    		right-of user-menu.uyelik 14px
+    		text is "Sepetim"

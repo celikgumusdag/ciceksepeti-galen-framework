@@ -1,0 +1,60 @@
+
+@objects
+        main-menu           .main-menu
+        cicek               .js-main-menu-item:nth-of-type(1)
+        bonnyfood           .js-main-menu-item:nth-of-type(2)
+        bonnygift           .js-main-menu-item:nth-of-type(3)
+        butik               .js-main-menu-item:nth-of-type(4)
+        user-menu           .js-responsive-menu .user-menu
+            siparis-takibi  .user-menu__item:nth-of-type(1)
+            uyelik          .user-menu__item:nth-of-type(2)
+            sepetim         .user-menu__item:nth-of-type(3)
+            bize-ulasin     .user-menu__item:nth-of-type(4)
+
+= Responsive Menu =
+    cicek:
+    	@on mobile
+    		height 45px
+
+    bonnyfood:
+        @on mobile
+            height 45px
+            below cicek
+
+    bonnygift:
+        @on mobile
+            height 45px
+            below bonnyfood
+
+    butik:
+        @on mobile
+            height 45px
+            below bonnygift
+
+= Responsive User Menu =
+    user-menu:
+        @on mobile
+            below main-menu 10px
+
+    user-menu.siparis-takibi:
+        @on mobile
+            inside user-menu
+            text is "Sipariş Takibi"
+
+    user-menu.uyelik:
+        @on mobile
+            inside user-menu
+            below user-menu.siparis-takibi
+            text is "Üyelik"
+
+    user-menu.sepetim:
+        @on mobile
+            inside user-menu
+            below user-menu.uyelik
+            text is "Sepetim"
+
+    user-menu.bize-ulasin:
+        @on mobile
+            inside user-menu
+            below user-menu.sepetim
+            text is "Bize Ulaşın"
