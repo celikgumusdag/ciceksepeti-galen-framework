@@ -14,7 +14,7 @@ You can find more example in this repository: https://github.com/galenframework/
 
 Help
 ------------
-If you got any questions don't hesitate to contact with me: mailto:celikgumusdag@gmail.com
+If you got any questions don't hesitate to contact with me: [celikgumusdag@gmail.com](mailto:celikgumusdag@gmail.com)
 
 License
 ------------
